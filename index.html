@@ -5,10 +5,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Praharsh Kumar Singh | Hacker | Traveller</title>
+	<title>Praharsh Kumar Singh</title>
 	<meta name="title" content="Praharsh Kumar Singh | Hacker | Traveller" />
 	<meta name="description" content="A passionate, enthusiastic and self-motivated cybersecurity professional" />
-	<meta name="author" content="beingeorge" />
+	<meta name="author" content="Praharsh" />
 	<meta name="theme-color" content="#2a2d35">
 
 	<!-- Vendor Css-->
@@ -27,8 +27,6 @@
         crossorigin="anonymous">
     </script>
 
-    <!--	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>-->
-<!--    <script src="https://unpkg.com/http-vue-loader"></script>-->
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
@@ -181,6 +179,8 @@
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="row mt-4">
 					<div class="col-sm-6 col-lg-6">
 						<h5 class="section-subHead mt-3"> My Publication</h5>
 						<div class="resume-list b-box hover-state p-4 mt-4">
@@ -191,8 +191,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
-					
+				
 					<div class="col-sm-6 col-lg-6">
 						<h5 class="section-subHead mt-3"> Wall Of Fame</h5>
 						<div class="resume-list b-box hover-state p-4 mt-4">
@@ -216,6 +215,7 @@
 							</div>
 						</div>
 					</div>
+				</div>
 				<div class="row mt-4">
 					<div class="col-sm-12 col-lg-12">
 						<h5 class="section-subHead mt-3 text-center"> My Skills</h5>
@@ -387,7 +387,7 @@
 					<div class="col-sm-12 col-lg-12">
 						<h5 class="section-subHead mt-3 text-center"> My Certifications</h5>
                         <div class="row">
-                            <div class="col-lg-2 offset-lg-4 col-4 offset-2">
+                            <div class="col-lg-2 offset-lg-2 col-4 offset-1">
                                 <a href="assets/docs/CEH.pdf" target="_blank">
                                     <img width="100" height="100" src="assets/my-images/CEH.png" />
                                 </a>
@@ -395,6 +395,16 @@
                             <div class="col-lg-2 col-4">
                                 <a href="assets/docs/CNSS.pdf" target="_blank">
                                     <img width="100" height="100" src="assets/my-images/CNSS.png" />
+                                </a>
+                            </div>
+							<div class="col-lg-2 col-4">
+                                <a href="assets/docs/CEHPRACTICAL.pdf" target="_blank">
+                                    <img width="100" height="100" src="assets/my-images/CEHPRACTICAL.png" />
+                                </a>
+                            </div>
+							<div class="col-lg-2 col-4">
+                                <a href="assets/docs/CEHMASTER.pdf" target="_blank">
+                                    <img width="100" height="100" src="assets/my-images/CEHMASTER.png" />
                                 </a>
                             </div>
                         </div>
@@ -534,29 +544,20 @@
         fill: #fff;
         text-anchor: middle;
     }
-    /*svg.radial-progresscircle { stroke:url(#gradient); }*/
 
 </style>
 <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    // $('svg.radial-progress').each(function( index, value ) {
-    //     $(this).find($('circle.complete')).removeAttr('style' );
-    // });
+
     $(window).scroll(function(){
         $('svg.radial-progress').each(function( index, value ) {
-            // If svg.radial-progress is approximately 25% vertically into the window when scrolling from the top or the bottom
             if (
                 $(window).scrollTop() > $(this).offset().top - ($(window).height() * 0.75) &&
                 $(window).scrollTop() < $(this).offset().top + $(this).height() - ($(window).height() * 0.25)
             ) {
-                // Get percentage of progress
                 percent = $(value).data('percentage');
-                // Get radius of the svg's circle.complete
                 radius = $(this).find($('circle.complete')).attr('r');
-                // Get circumference (2πr)
                 circumference = 2 * Math.PI * radius;
-                // Get stroke-dashoffset value based on the percentage of the circumference
                 strokeDashOffset = circumference - ((percent * circumference) / 100);
-                // Transition progress for 1.25 seconds
                 $(this).find($('circle.complete')).animate({'stroke-dashoffset': strokeDashOffset}, 1250);
             }
         });
@@ -574,9 +575,4 @@
 	<script src="assets/js/custom.js"></script>
 </body>
 
-<script data-name="BMC-Widget" data-cfasync="false" src="../cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.html" data-id="hackerspider1" data-description="Support me on Buy me a coffee!" data-message="Let's have a drink!!" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-
 </html>
-
-
